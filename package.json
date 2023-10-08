@@ -1,0 +1,27 @@
+{
+  "name": "pug-modern",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc",
+    "test": "vitest run --environment node && vitest run --environment jsdom"
+  },
+  "author": "Lucian I. Last<li@last.nl>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/pug": "^2.0.7",
+    "jsdom": "^22.1.0",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6"
+  },
+  "dependencies": {
+    "pug": "^2.0.4"
+  }
+}

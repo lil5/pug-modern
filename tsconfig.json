@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "outDir": "lib",
+    "target": "es2016",
+    "module": "commonjs",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "declaration": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "lib"]
+}
