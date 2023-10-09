@@ -2,7 +2,12 @@
   "name": "pug-modern",
   "type": "module",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pug but simple and just works in the browser.",
+  "keywords": [
+    "pug",
+    "browser",
+    "web"
+  ],
   "exports": {
     ".": {
       "import": "./lib/main.es.js",
@@ -13,7 +18,8 @@
   "module": "./lib/main.es.js",
   "typings": "./lib/main.d.ts",
   "files": [
-    "lib"
+    "lib",
+    "vendor"
   ],
   "scripts": {
     "prepublish": "npm run build",
