@@ -1,27 +1,38 @@
 {
   "name": "pug-modern",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./lib/main.es.js",
+      "require": "./lib/main.cjs.js"
+    }
+  },
+  "main": "./lib/main.cjs.js",
+  "module": "./lib/main.es.js",
+  "typings": "./lib/main.d.ts",
   "files": [
     "lib"
   ],
   "scripts": {
     "prepublish": "npm run build",
-    "build": "tsc",
+    "build": "tsc && vite build",
+    "vendor": "wget -O vendor/pug.min.cjs https://pugjs.org/js/pug.js",
     "test": "vitest run --environment node && vitest run --environment jsdom"
   },
   "author": "Lucian I. Last<li@last.nl>",
   "license": "MIT",
   "devDependencies": {
+    "@rollup/plugin-typescript": "^8.2.1",
+    "@types/node": "^20.8.3",
     "@types/pug": "^2.0.7",
     "jsdom": "^22.1.0",
+    "pug": "2.0.4",
+    "rollup-plugin-typescript-paths": "^1.3.0",
+    "tslib": "^2.4.0",
     "typescript": "^5.2.2",
+    "vite": "^2.9.9",
     "vitest": "^0.34.6"
-  },
-  "dependencies": {
-    "pug": "^2.0.4"
   }
 }

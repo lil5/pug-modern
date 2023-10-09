@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import Pug from "../src";
+import Pug from "../src/main";
 
 test("render basic pug", () => {
   expect(Pug.render("h1 hi")).toBe("<h1>hi</h1>");
