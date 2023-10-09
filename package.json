@@ -3,6 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "description": "Pug but simple and just works in the browser.",
+  "homepage": "https://github.com/lil5/pug-modern",
   "keywords": [
     "pug",
     "browser",
